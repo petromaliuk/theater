@@ -20,7 +20,7 @@ public class Feedback {
     private Film film;
 
     @ManyToOne()
-    @JoinColumn(name = "user", nullable = false, referencedColumnName = "id")
+    @JoinColumn(name = "usr", nullable = false, referencedColumnName = "id")
     @JsonView(Views.FullFilm.class)
     private User user;
 
